@@ -1,0 +1,191 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical Prescription Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Prescription Form</h1>
+  <header>
+    <label for="p-name">Patient Name:
+
+      <input type="text" name="p-name" placeholder="Enter patient Name......" />
+
+    </label>
+    <ul>
+
+      <button class="btn" onclick="myFunction1()">Current Medication</button>
+
+      <li>
+
+        <button class="btn" onclick="myFunction2()">New Medication</button>
+
+      </li>
+
+      <li>
+
+        <button class="btn" onclick="myFunction3()">Formulary</button>
+
+      </li>
+    </ul>
+  </header>
+
+
+
+
+
+
+
+  <div id="section1" style="display:none">
+    <form action="">
+
+      <div class="block1" id="b1">
+        <h2>Current Medication</h2>
+
+        <label for="l-pres">Last Prescribed Medicine:
+
+          <input type="text" value="Abacavir" disabled name="l-pres" />
+        </label>
+        <button class="btn" onclick="myFunction2()">Change</button>
+
+        <!-- <a href="#b2" class="chng" myFunction2()> change</a> -->
+        <label for="dose">
+          Check Dose:
+
+          <input type="number" min="1" value="1" name="dose" />
+        </label>
+        <p>Are you sure?
+          <input type="radio" name="decision">Yes
+          <input type="radio" name="decision">No
+        </p>
+
+        <button class="btn">Confirm</button>
+      </div>
+  </div>
+
+
+
+
+
+
+  <div id="section2" style="display:none">
+    <div class="block3" id="b2">
+      <h2>New Medication</h2>
+      <label for="med">
+        Enter Medicine Name: <input type="text" placeholder="Enter Medicine Name......">
+      </label>
+      <label for="dose"> Enter Dose: <input type="number" min="1" value="1">
+      </label>
+      <p>Are you sure?
+        <input type="radio" name="decision">Yes
+        <input type="radio" name="decision">No
+      </p>
+      <button class="btn"> Confirm</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <div id="section3" style="display:none">
+    <div class="block2 " id="b3">
+      <div class="container">
+
+
+
+        <h2>Formulary</h2>
+
+        <div class="select-box">
+          <div class="options-container">
+            <div class="option">
+              <input type="radio" class="radio" id="Synthroid" name="category" />
+              <label for="Synthroid">Synthroid (levothyroxine)</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="Crestor " name="category" />
+              <label for="Crestor ">Crestor (rosuvastatin)</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="Ventolin" name="category" />
+              <label for="Ventolin">Ventolin HFA (albuterol)</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="Nexium" name="category" />
+              <label for="Nexium">Nexium (esomeprazole)</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="Advair " name="category" />
+              <label for="Advair ">Advair Diskus (fluticasone)</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="Lantus" name="category" />
+              <label for="Lantus">Lantus Solostar (insulin glargine)</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="Vyvanse" name="category" />
+              <label for="Vyvanse">Vyvanse (lisdexamfetamine)</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="Lyrica" name="category" />
+              <label for="Lyrica">Lyrica (pregabalin)</label>
+            </div>
+
+            <div class="option">
+              <input type="radio" class="radio" id="Spiriva" name="category" />
+              <label for="Spiriva">Spiriva Handihaler (tiotropium)</label>
+            </div>
+          </div>
+
+
+          <div class="selected">
+            Select Medicine
+          </div>
+
+          <div class="search-box">
+            <input type="text" placeholder="Start Typing..." />
+          </div>
+        </div>
+      </div>
+      <label for="dose">
+        Enter Dose:
+
+        <input type="number" min="1" value="1" name="dose" />
+      </label>
+      <p>Are you sure?
+        <input type="radio" name="decision">Yes
+        <input type="radio" name="decision">No
+      </p>
+      <button class="btn">Confirm</button>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="main.js">
+
+
+  </script>
+
+</html>
